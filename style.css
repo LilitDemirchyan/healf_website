@@ -1,0 +1,383 @@
+body{
+	margin: 0px;
+}
+.main{
+	/*background-color: #0a5e0d4e;*/
+	background-color: rgba(9, 90, 9, 0.63);
+}
+.header{
+	background-color: #eaedbb;
+}
+.header>.top-menu{
+	display: flex;
+	width: 100%;
+	height: 50px;
+	justify-content:space-between; 
+	align-items: center;
+	padding: 10px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #000;
+}
+
+.header p{
+	margin: 0px;
+}
+.logo{
+	width: 80px;
+	height: 40px;
+}
+.logo>img{
+	width: 100%;
+	height: 100%;
+}
+.navigation>ul{
+	list-style: none;
+}
+
+.navigation>ul>li{
+	display: inline;
+}
+
+.navigation>ul>li>a{
+	text-decoration:none;
+	padding:10px;
+	color:#000;
+	transition: all 1s;
+	text-transform: uppercase;
+}
+
+.navigation>ul>li>a:hover{
+	background-color: rgba(9, 90, 9, 0.63);
+	color:#ccc;
+}
+.hidden-menu{
+	display: none;
+	width: 30px;
+	height: 30px;
+}
+.hidden-menu>ul{
+	position: absolute;
+	top: 40px;
+	right: 0px;
+	display: none;
+	margin: 0px;
+	background-color: #fff;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	list-style: none;
+	z-index: 2;
+}
+.hidden-menu>ul>li{
+	padding: 10px;
+}
+
+.hidden-menu>ul>li:hover{
+	background-color: #ccc;
+}
+
+.hidden-menu>ul>li>a{
+	text-decoration: none;
+	color: green;
+}
+
+
+.hidden-menu>ul:hover{
+	display: block;
+}
+.hidden-menu:hover{
+	cursor: pointer;
+}
+
+.hidden-menu:hover ul{
+	display: block;
+}
+
+.hidden-menu>img{
+	width: 100%;
+	height: 100%;
+}
+
+.top-menu-image-block{
+	height: 250px;
+	filter: brightness(1.2);
+}
+
+.top-menu-image{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	border-bottom: 1px solid #042108;
+	background-image: url('https://www.cnet.com/a/img/resize/d894013b9bb8237327f1547032bb5509a0955d0b/hub/20');
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+}
+
+.top-menu-image>div{
+	background-color: transparent;
+	opacity: 0.5;
+	padding: 50px;
+	text-align: center;
+	transition: all 1s;
+}
+
+.top-menu-image>div:hover{	
+	opacity: 1;
+	cursor: pointer;
+}
+
+.row{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+}
+
+.row>div{
+	width: 40%;
+}
+.image-row{
+	max-height: 500px;
+}
+.advertising{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.advertising>div>p{
+	font-size: 2em;
+	font-weight: bold;
+}
+.footer{
+	height: 70px;
+	background-color: #0e582d;
+}
+.products{
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.products>div:hover{
+	background-color: #FAFAFA;
+	box-shadow: 2px 2px 20px #ccc;
+	border:0px;
+}
+.products>div{
+	width: 24%;
+	min-width: 300px;
+	border:1px solid #ccc;
+	margin-top: 10px;
+}
+.products>div>div{
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.product-pic{
+	height: 400px;
+}
+.product-desc {
+	height: 200px;
+}
+
+.product-desc>p{
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.product-desc>a{
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: #c1c2c3;
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+.product-desc>a:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+
+.products>div:hover{
+	cursor: pointer;
+}
+
+.contact-block{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	align-items: center;
+}
+.contact-block>div{
+	width: 30%;
+}
+.contact-block input{
+	display: block;
+	margin-top: 10px;
+	width: 100%;
+	height: 30px;
+	border-radius: 5px;
+	border:1px solid #ccc;
+	text-align: center;
+}
+
+.contact-block input[type="submit"]{
+	background-color: orange;
+	font-size: 1.5em;
+	font-weight: bold;
+	height: 50px;
+}
+
+
+.contact-map iframe{
+	width: 100%;
+}
+
+.about-table{
+	padding: 40px 0px;
+	box-sizing: border-box;
+}
+
+.about-table>div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-table>div>table{
+	width: 50%;
+	border-collapse: collapse;
+	background-color: #fff;
+}
+
+.about-table>div>table>thead>tr>th{
+	background-color: #ccc;
+	font-weight: bold;
+}
+
+.about-table>div>table>thead>tr>th,.about-table>div>table>tbody>tr>td{
+	border:1px solid #000;
+	text-align: center;
+	padding: 10px;
+}
+
+
+.footer{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.footer>div{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer>div>div{
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+	border-radius: 100%;
+}
+
+.footer>div>div>a{
+	width: 100%;
+	height: 100%;
+}
+
+.footer>div>div>a>img{
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+}
+
+.footer>div>div:hover{
+	cursor: pointer;
+	border: 2px solid #808080;
+}
+
+
+@media only screen and (max-width: 900px){
+	.row{
+		display: block;
+	}
+
+	.contact-block{
+		display: block;
+	}
+
+	.contact-block>div{
+		width: 100%;
+		padding: 20px;
+		box-sizing: border-box;
+	}
+
+	.row>div{
+		width: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+
+	.image-row{
+		max-height: 100%;
+	}
+}
+
+
+@media only screen and (max-width: 500px){
+	.navigation{
+		display: none;
+	}
+	.hidden-menu{
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 652px){
+	.products{
+		justify-content: center;
+	}
+	.about-table>div>table{
+		width: 100%;
+	}
+	.products>div{
+		width: 80%;
+	}
+}
+
+
+.container {
+	display: flex; /* Use flexbox for layout */
+	align-items: center; /* Vertically align content */
+}
+.image-container{
+	margin-left: 50px;
+	flex: 1;
+}
+.text-container {
+	/*flex: 1; /* Flex-grow: 1 to fill remaining space */
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
